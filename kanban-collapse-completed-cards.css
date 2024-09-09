@@ -1,0 +1,22 @@
+.view-header:not(:has(.view-action[aria-label='Archive completed cards'])) ~ .view-content {
+	& .kanban-plugin .kanban-plugin__item-title-wrapper :has(input:checked) ~ .kanban-plugin__item-title {
+		max-height: 44px;
+		mask-image: linear-gradient(to right, black 0, black 70%, transparent 100%);
+
+		& p {
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			-webkit-line-clamp: 2;
+
+			&:first-child, &:nth-child(2) {
+				margin-bottom: 2px;
+			}
+		}
+
+		& .kanban-plugin__item-metadata {
+			display: none;
+		}
+	}
+}
+

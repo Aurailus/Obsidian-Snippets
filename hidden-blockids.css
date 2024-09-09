@@ -1,0 +1,19 @@
+.cm-s-obsidian span.cm-blockid {
+	font-size: 0;
+}
+
+.cm-s-obsidian .cm-active span.cm-blockid {
+	font-size: var(--font-smallest);
+}
+
+.cm-s-obsidian span.cm-blockid::after {
+	content: '^';
+	font-size: 0.8rem;
+	display: inline-block;
+	margin-top: -0.1em;
+	vertical-align: text-top;
+}
+
+.cm-s-obsidian .cm-active span.cm-blockid::after {
+	display: none;
+}
